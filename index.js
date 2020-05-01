@@ -1,6 +1,10 @@
 const inquirer = require("inquirer");
-const generateMarkdown =("./utils/generateMarkdown.js");
+
 const fs = require("fs");
+const api = require("./utils/apicall");
+const path = require('path');
+const generateMarkdown = require("./utils/generateMarkdown");
+console.log(generateMarkdown);
 
 const questions = [
 {
@@ -31,13 +35,13 @@ message: "Please enter a table of contents:"
 {
 type: "input",
 name: "installation",
-message: "Please enter the dependencies your project needs (WORKING):",
-default: "npm install"
+message: "Please enter all the required dependencies:",
+default: "npm i"
 },    
 {
 type: "input",
 name: "usage",
-message: "Please enter a description of how to use this application (WORKING)"
+message: "Please enter a description of how to use this application:"
 },
 {
 type: "list",
@@ -48,14 +52,14 @@ choices: ["MIT", "DWTYW", "BSD 3", "None"]
 {
 type: "input",
 name: "contributing",
-message: "Please enter a list of who helped complete this project: (WORKING)"
+message: "Please enter a list of who contributed to this project:"
 },
 {
 type: "input",
 name: "tests",
-message: "Please enter the tests that should be run on this repo (WORKING)",
+message: "Please enter the tests that should be run on this project",
 default: "npm test"
-},
+}
 
 ];
 
@@ -64,9 +68,13 @@ function writeToFile(fileName, data) {
 }
 
 function init() {
-inquirer.prompt(questions).catch((inquirerResponses) => {
-writeToFile("README.md", generateMarkdown({ ...inquirerResponses}));
-})
+inquirer.prompt(questions).then((inquirerResponses) => {
+    api
+    .getUser(inquirerResponses.github)
+    .then(({ data }) => {
+        writeToFile("README.md", generateMarkdown({ ...inquirerResponses, ... data }));
+        })
+    })
 }
 
 init();
