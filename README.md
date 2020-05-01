@@ -1,53 +1,44 @@
 
-# ReadMe Generator
+# ReadmME Generator
+## A command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command: 
 
+---------------------------------------------------------- "*node index.js*" ----------------------------------------------------------
 
-## Description
+The user will be prompted for their GitHub username and other information pertaining to the project the README is for.
 
-A CLI application that will allow a user to create a readme file quickly and easily.
+The README will be populated with the following:
 
-## Table of Contents 
+* At least one badge
+* Project title
+* Description
+* Table of Contents
+* Installation
+* Usage
+* License
+* Contributing
+* Tests
+* Questions
+* User GitHub profile picture
+* User GitHub email
 
-* [Installation](#installation)
+# User Story
+## "As a developer, I want to be able to generate a quality readme quickly and easily.
 
-* [Usage](#usage)
-while in the correct directory, type in "node index.js" and the application will start.
+# Technologies Used
+## Node
+## Javascript
+## Github
 
-* [License](#license)
+# Dependencies 
+## Inquirer
+## Dotenv
+## Axios
 
-* [Contributing](#contributing)
-Dylan Bremner
-* [Tests](#tests)
-npm test
-* [Questions](#questions)
+# Contributors
 
-## Installation
+## Made by me, Dylan Bremner - github.com/bremnerdc
 
-To install necessary dependencies, run the following command:
+# Deployed Link
+*https://bremnerdc.github.io/Readme_DCB/*
 
-```
-axios, inquirer, dotenv
-```
-
-## Usage
-
-while in the correct directory, type in "node index.js" and the application will start.
-  
-## Contributing
-
-Dylan Bremner
-
-## Tests
-
-To run tests, run the following command:
-
-```
-undefined
-```
-
-## Questions
-
-<img src="https://avatars3.githubusercontent.com/u/61300825?v=4" alt="avatar" style="border-radius: 16px" width="30" />
-
-If you have any questions about the repo, open an issue or contact [bremnerdc](https://api.github.com/users/bremnerdc) directly at null.
-
+# GIF of Application in action:
