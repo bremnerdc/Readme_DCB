@@ -4,7 +4,6 @@ const fs = require("fs");
 const api = require("./utils/apicall");
 const path = require('path');
 const generateMarkdown = require("./utils/generateMarkdown");
-console.log(generateMarkdown);
 
 const questions = [
 {

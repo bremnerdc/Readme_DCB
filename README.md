@@ -1,44 +1,53 @@
 
-# ReadmME Generator
-## A command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command: 
+# ReadMe Generator
 
----------------------------------------------------------- "*node index.js*" ----------------------------------------------------------
 
-The user will be prompted for their GitHub username and other information pertaining to the project the README is for.
+## Description
 
-The README will be populated with the following:
+A CLI application that will allow a user to create a readme file quickly and easily.
 
-* At least one badge
-* Project title
-* Description
-* Table of Contents
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
-* User GitHub profile picture
-* User GitHub email
+## Table of Contents 
 
-# User Story
-## "As a developer, I want to be able to generate a quality readme quickly and easily.
+* [Installation](#installation)
 
-# Technologies Used
-## Node
-## Javascript
-## Github
+* [Usage](#usage)
+while in the correct directory, type in "node index.js" and the application will start.
 
-# Dependencies 
-## Inquirer
-## Dotenv
-## Axios
+* [License](#license)
 
-# Contributors
+* [Contributing](#contributing)
+Dylan Bremner
+* [Tests](#tests)
+npm test
+* [Questions](#questions)
 
-## Made by me, Dylan Bremner - github.com/bremnerdc
+## Installation
 
-# Deployed Link
-*https://bremnerdc.github.io/Readme_DCB/*
+To install necessary dependencies, run the following command:
 
-# GIF of Application in action:
+```
+axios, inquirer, dotenv
+```
+
+## Usage
+
+while in the correct directory, type in "node index.js" and the application will start.
+  
+## Contributing
+
+Dylan Bremner
+
+## Tests
+
+To run tests, run the following command:
+
+```
+undefined
+```
+
+## Questions
+
+<img src="https://avatars3.githubusercontent.com/u/61300825?v=4" alt="avatar" style="border-radius: 16px" width="30" />
+
+If you have any questions about the repo, open an issue or contact [bremnerdc](https://api.github.com/users/bremnerdc) directly at null.
+
