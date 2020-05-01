@@ -57,7 +57,7 @@ message: "Please enter a list of who contributed to this project:"
 {
 type: "input",
 name: "tests",
-message: "Please enter the tests that should be run on this project",
+message: "To test this project, run the following command:",
 default: "npm test"
 }
 
