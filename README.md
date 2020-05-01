@@ -43,3 +43,6 @@ The README will be populated with the following:
 ## GIF of Application in action:
 ![readmegif](https://user-images.githubusercontent.com/61300825/80847210-a157f080-8bc3-11ea-8992-f26dc35bfe62.gif)
 
+## Link to higher quility gif:
+https://imgur.com/a/Wgk1AH9
+
