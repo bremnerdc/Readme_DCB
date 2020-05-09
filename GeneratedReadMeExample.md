@@ -44,7 +44,7 @@ Dylan Bremner
 To run tests, run the following command:
 
 ```
-undefined
+npm test app.js
 ```
 
 ## Questions
